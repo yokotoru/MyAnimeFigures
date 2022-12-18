@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Up"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/lable2">
+
+
+        <ImageButton
+            android:id="@+id/btnadd"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="360dp"
+            android:backgroundTint="@android:color/transparent"
+            android:onClick="onGoTOTheADDPage"
+            android:src="@drawable/add"
+            android:textAlignment="center"
+            app:cornerRadius="45dp"
+            app:strokeWidth="1dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/barrio"
+            android:shadowColor="#502741"
+            android:shadowDx="-4.7"
+            android:shadowDy="2.4"
+            android:shadowRadius="0.01"
+            android:text="My Shelf"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/styles"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="  Поиск"
+            android:textColor="#502741"
+            tools:ignore="TouchTargetSizeCheck" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Down"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_alignParentBottom="true"
+        android:background="#8BFBB3EF"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/BD"
+        android:layout_width="match_parent"
+        android:layout_height="617dp"
+        android:layout_above="@+id/Down"
+        android:layout_below="@+id/editTextTextPersonName"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="0dp">
+
+    </ListView>
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Наименование"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"/>
+
+</RelativeLayout>

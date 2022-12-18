@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyAnimeFigures</string>
+    <string-array name="status">
+        <item>Уже есть</item>
+        <item>В пути</item>
+        <item>Предзаказ</item>
+        <item>Хочу</item>
+    </string-array>
+</resources>
